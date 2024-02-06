@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        /* @import url('css/gnb.css'); */
+        @import url('css/default.css');
+        @import url('css/feed.css');
+    </style>
+    <script>
+        let is_liked = true;
+
+        function like() {
+            if (is_liked == true) {
+                $('#heart').attr('src', 'image/icons/12.png')
+                is_liked = false;
+            } else {
+                $('#heart').attr('src', 'image/icons/5.png')
+                is_liked = true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <li class="flex-row">
+                <img width="102" src="image/logo_instagram.png">
+            </li>
+            <li class="flex-row sidebar-content">
+                <img src="image/icons/1.png">
+                <p class="bold">Home</p>
+            </li>
+            <li class="flex-row sidebar-content">
+                <img src="image/icons/15.png">
+                <p>Search</p>
+            </li>
+            <li class="flex-row sidebar-content">
+                <img src="image/icons/4.png">
+                <p>Explore</p>
+            </li>
+            <li class="flex-row sidebar-content">
+                <img src="image/icons/13.png">
+                <p>Reels</p>
+            </li>
+            <li class="flex-row sidebar-content">
+                <img src="image/icons/9.png">
+                <p>Massages</p>
+            </li>
+            <li class="flex-row sidebar-content">
+                <img src="image/icons/5.png">
+                <p>Notification</p>
+            </li>
+            <li class="flex-row sidebar-content">
+                <img src="image/icons/3.png">
+                <p>Create</p>
+            </li>
+            <li class="flex-row sidebar-content">
+                <img width="32" src="image/profile/2.png">
+                <p>Profile</p>
+            </li>
+            <li class="flex-row bawah-content">
+                <img <img width="32" src="image/icons/7.png">
+                <p>More</p>
+            </li>
+        </div>
+
+        <div class="wrapper">
+            <div class="tengah flex-col">
+                <div class="status-wrapper">
+                    <div class="status-card">
+                        <div class="profile-pic">
+                            <img width="32" src="image/follower/aryana.jpg">
+                        </div>
+                        <p class="username">ryaan.ksm</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic">
+                            <img width="32" src="image/follower/ipm.jpg">
+                        </div>
+                        <p class="username">pripmsmk...</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic">
+                            <img width="32" src="image/follower/dhiva.jpg">
+                        </div>
+                        <p class="username">dhvzzhrr_</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic">
+                            <img width="32" src="image/follower/syafa.jpg">
+                        </div>
+                        <p class="username">syaa.kirnptr</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic">
+                            <img width="32" src="image/follower/utlampung.jpg">
+                        </div>
+                        <p class="username">utlampung.offi...</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic">
+                            <img width="32" src="image/follower/ppipm.jpg">
+                        </div>
+                        <p class="username">ppipm</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic">
+                            <img width="32" src="image/follower/smk.jpg">
+                        </div>
+                        <p class="username">sewu_smk...</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic">
+                            <img width="32" src="image/follower/2.png">
+                        </div>
+                        <p class="username">billgates</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic">
+                            <img width="32" src="image/follower/rpl.jpg">
+                        </div>
+                        <p class="username">12rpl</p>
+                    </div>
+                </div>
+                <div class="feed flex-col">
+                    <div class="profile flex-row">
+                        <div class="img-wrap">
+                            <img width="32" src="image/profile/2.png">
+                        </div>
+                        <p class="flex-col">
+                            <span>tyaa_devinta06</span>
+                            <span>Indonesia</span>
+                        </p>
+                        <img width="20" src="image/icons/7.png">
+                    </div>
+                    <div class="imgs swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="image/post/woman1.png"></div>
+                            <div class="swiper-slide"><img src="image/post/woman2.jpg"></div>
+                            <div class="swiper-slide"><img src="image/post/woman3.png"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="feed-icons flex-row">
+                        <img id="heart" onclick="like()" src="image/icons/5.png">
+                        <img src="image/icons/9.png">
+                        <img src="image/icons/2.png">
+                        <img src="image/icons/10.png">
+                    </div>
+                    <div class="like">
+                        9,999 likes
+                    </div>
+                    <div class="comments">
+                        <span class="title">tyaa_devinta06</span>
+                        "Wanita muslimah adalah berliannya Islam. Tak ada seorang pun yang akan mengungkapkan berlian mereka kepada orang asing." 
+                        <span class="hashtag">#WanitaMuslimah</span>
+                    </div>
+                    <div class="count">
+                        view all 169 comments
+                    </div>
+                    <div class="commentar">
+                        <div class="comment-box flex-row">
+                            <input type="text" placeholder="Add a comment.." />
+                        </div>
+                        <div class="imgs emoji-icons">
+                            <img src="image/icons/16.png">
+                        </div>
+                    </div>
+                    <div class="time">
+                        20 HOURS AGO
+                    </div>
+                </div>
+            </div>
+            <div class="account">
+                <div class="account-content">
+                    <li class="flex-row">
+                        <div class="img-wrap">
+                            <img width="56" src="image/profile/2.png">
+                        </div>
+                        <p class="flex-col">
+                            <span>tyaa_devinta06</span>
+                            <span>༺♡ℭ𝔥𝔦𝔫𝔱𝔶𝔞 𝔇𝔢𝔳𝔦𝔞𝔫𝔱𝔦 𝔓.♡༻</span>
+                        </p>
+                        <a href="#">Switch</a>
+                    </li>
+                    <li class="flex-row suggestion">
+                        <span>Suggestions for you</span>
+                        <a href="#">See All</a>
+                    </li>
+                    <li class="flex-row friends">
+                        <div class="img-wrap">
+                            <img width="50" height="47" src="image/follower/ppipm.jpg">
+                        </div>
+                        <p class="flex-col">
+                            <span>Pimpinan Pusat IPM</span>
+                            <span>following you</span>
+                        </p>
+                        <a href="#">Follow</a>
+                    </li>
+                    <li class="flex-row friends">
+                        <div class="img-wrap">
+                            <img width="50" height="47" src="image/follower/aryana.jpg">
+                        </div>
+                        <p class="flex-col">
+                            <span>Aryana Kusuma</span>
+                            <span>following you</span>
+                        </p>
+                        <a href="#">Follow</a>
+                    </li>
+                    <li class="flex-row friends">
+                        <div class="img-wrap">
+                            <img width="50" height="47" src="image/follower/maya.jpg">
+                        </div>
+                        <p class="flex-col">
+                            <span>Filzdah Atika Maya Kosala</span>
+                            <span>following you</span>
+                        </p>
+                        <a href="#">Follow</a>
+                    </li>
+                    <li class="flex-row friends">
+                        <div class="img-wrap">
+                            <img width="50" height="47" src="image/follower/smk.jpg">
+                        </div>
+                        <p class="flex-col">
+                            <span>Esemka Muhammadiyah Pringsewu</span>
+                            <span>following you</span>
+                        </p>
+                        <a href="#">Follow</a>
+                    </li>
+                    <li class="flex-row friends">
+                        <div class="img-wrap">
+                            <img width="50" height="47" src="image/follower/dhiva.jpg">
+                        </div>
+                        <p class="flex-col">
+                            <span>•┈ ديفا زهرا ┈•</span>
+                            <span>following you</span>
+                        </p>
+                        <a href="#">Follow</a>
+                    </li>
+                </div>
+                <div class="about">
+                    <a href="#">About</a>
+                    <a href="#">Help</a>
+                    <a href="#">Press</a>
+                    <a href="#">API</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Locations</a>
+                    <a href="#">Language</a>
+                    <a href="#">Meta Verified</a>
+                </div>
+                <div class="name">
+                    © 2024 Instagram from Meta
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            //optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            //if we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+
+            //navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+    </script>
+</body>
+
+</html>
